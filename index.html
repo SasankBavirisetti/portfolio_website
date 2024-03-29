@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <div class="header" id="header">
+        <a href="/" class="name-logo">
+            <div class="logo">Sasank Bavirisetti</div>
+        </a>
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a id="about" onclick="goToPage('About')">About</a></li>
+                <li><a id="skills" onclick="goToPage('Skills')">Skills</a></li>
+                <li><a id="projects" onclick="goToPage('Projects')">Projects</a></li>
+                <li><a id="contact" onclick="goToPage('Contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main" id="About">
+        <img src="./images/profileimg.jpeg" alt="My Profile Pic" class="profile-pic">
+        <div class="my-details">
+            <div class="text-details">
+                <p class="text">Hello,I am</p>
+                <h1 class="name">Sasank Bavirisetti</h1>
+                <p class="role">Frontend Developer</p>
+            </div>
+            <div class="btn-container">
+                <button class="btn btn-download-resume" onclick="window.open('./files/Sasank_Resume.pdf')">Download
+                    Resume</button>
+                <button class="btn btn-contant-me " onclick="goToPage('Contact')" id="contact1">Contact Me</button>
+            </div>
+            <div class="social-media-profiles">
+                <img src="./images/linkedin.png" alt="My Linkedin Profile" class="linkedin-profile icon"
+                    onclick="location.href='https://www.linkedin.com/in/sasank-bavirisetti-666882256/'">
+                <img src="./images/github.png" alt="My Github Profile" class="github-profile icon"
+                    onclick="location.href='https://github.com/SasankBavirisetti'">
+            </div>
+        </div>
+    </div>
+    <div class="skill-container " id="Skills">
+        <div class="skill-details">
+            <h1 class="skill-title">My Skills</h1>
+            <div class="skill-images">
+                <img src="./images/html.png" class="images html-image" alt="HTML">
+                <img src="./images/css.jpg" class="images css-image" alt="CSS">
+                <img src="./images/javascript2.png" class="images javascript-image" alt="JAVA SCRIPT">
+                <img src="./images/react3.png" class="images react-image" alt="REACTJS">
+                <img src="./images/python.jpg" class="images python-image" alt="PYTHON">
+                <img src="./images/java.png" class="images java-image" alt="JAVA">
+            </div>
+        </div>
+    </div>
+    <!-- <div class="experience" id="Experience">
+        <h1 class="experience-title">My Experiences</h1>
+        <div class="experinece-cards">
+            <div class="experience-card">
+                <div class="java-project-img experience-img" id="experience-img"></div>
+                <div class="experience-details" id="experience-details">
+                    <div class="experience-project-details">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatibus, rem eligendi
+                        praesentium enim exercitationem cum odio debitis corporis quod in hic accusantium autem veniam
+                        nobis illo dolore! Facilis sequi consectetur impedit commodi fugiat dolor earum illo, tempore,
+                        incidunt animi libero provident non saepe! Distinctio.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod accusamus reiciendis alias quidem
+                        totam voluptatum voluptates dignissimos, cupiditate obcaecati ullam, sint, atque dolorem.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam est, at ducimus aspernatur
+                        quisquam laudantium sed, labore sunt quos esse laborum in nam.
+                    </div>
+                    <div class="btns -experience">
+
+                        <button class="btn ">visit the project</button>
+                        <button class="btn ">get the code</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> -->
+    <div class="projects" id="Projects">
+        <h1 class="project-title">My Projects</h1>
+        <div class="project-cards">
+
+
+            <div class="project-card">
+                <div class="youtube-clone-img banner-news">
+                    <div class="carousel-news" id="carousel-news">
+                        <div class="slide slide-news"><img class="news-img" src="/for portfolio/news app api/imga1.png"
+                                class="news-app-img"></div>
+                        <div class="slide slide-news"><img class="news-img" src="/for portfolio/news app api/imga2.png"
+                                class="news-app-img"></div>
+                        <div class="slide slide-news"><img class="news-img" src="/for portfolio/news app api/imga1.png"
+                                class="news-app-img"></div>
+
+                    </div>
+                </div>
+                <div class="project-details">
+                    <div class="youtube-details">
+                        <h1 style="margin-bottom: 20px;">NEWS APP USING API</h1>
+                        I built this application by using the frontend technologies like HTML,CSS,JS and JS library
+                        ReactJs<br />
+                        Here I have utilised the hooks like useState , useEffect from the library.<br />
+                        This application provides users with a convenient platform to explore news articles based on
+                        their interests, categories.<br />
+                        Here I have fetch the news from the api by using fetch api and it gives the latest news of every
+                        category in the order of time.<br />
+                        In addition,by using the search bar functionality the user can filter the data based on the
+                        interest like sports news , business news etc.<br />
+                        And the every news items contains the title , author and even we can know extra information
+                        regarding the paticular news
+                    </div>
+                    <!-- <div class="btns">
+
+                        <button class="btn ">visit the clone</button>
+                        <button class="btn ">get the code</button>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="youtube-clone-img project-img banner-crud">
+                    <div class="carousel-crud" id="carousel-crud">
+                        <div class="slide-crud "><img class="crud-img" src="./for portfolio/crud/imgc1.png" /></div>
+                        <div class="slide-crud "><img class="crud-img" src="./for portfolio/crud/imgc2.png" /></div>
+                        <div class="slide-crud "><img class="crud-img" src="./for portfolio/crud/imgc3.png" /></div>
+                        <div class="slide-crud "><img class="crud-img" src="./for portfolio/crud/imgc4.png" /></div>
+                        <div class="slide-crud "><img class="crud-img" src="./for portfolio/crud/imgc5.png" /></div>
+                        <div class="slide-crud "><img class="crud-img" src="./for portfolio/crud/imgc6.png" /></div>
+                        <div class="slide-crud "><img class="crud-img" src="./for portfolio/crud/imgc7.png" /></div>
+                        <div class="slide-crud "><img class="crud-img" src="./for portfolio/crud/imgc8.png" /></div>
+                        <div class="slide-crud "><img class="crud-img" src="./for portfolio/crud/imgc9.png" /></div>
+                        <div class="slide-crud "><img class="crud-img" src="./for portfolio/crud/imgc1.png" /></div>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <div class="youtube-details">
+                        <H1>CRUD APPLICATION</H1>
+                        A CRUD (Create, Read, Update, Delete) application is a type of software application or system
+                        that facilitates basic operations for managing data. It is developed using HTML,CSS,JS and
+                        ReactJs<br />
+                        <h4>Create : </h4>This operation involves adding new data entries or records into the
+                        system.<br />
+                        <h4>Read : </h4>The read operation retrieves and displays existing data from the system.<br />
+                        <h4>Update : </h4>This operation allows users to modify or update existing data entries. Users
+                        can make
+                        changes to the content of a record, such as updating task details.<br />
+                        <h4>Delete : </h4>The delete operation removes data entries or records from the system. Users
+                        can choose
+                        to delete unnecessary or outdated data to keep the system organized and efficient.
+                    </div>
+                    <!-- <div class="btns">
+
+                        <button class="btn ">Try the crud Application</button>
+                        <button class="btn ">get the code</button>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="youtube-clone-img project-img banner-clone">
+                    <img class='clone-img' src="./for portfolio/insta clone/imgcl1.png" />
+                </div>
+                <div class="project-details">
+                    <div class="youtube-details">
+                        <h1 style="margin-bottom: 20px;">INSTAGRAM CLONE</h1>
+                        I built this clone using frontend technologies like HTML,CSS,JS and uses the JS library
+                        ReactJs.<br />
+                        This clone aims to replicate the visual appearance and basic functionality of the Instagram home
+                        page, providing users with a familiar experience.<br />
+                        Here I have add the icons like home , messaging , create etc.. from font awesome library<br />
+                        I split this homepage into three parts like navigation , content page and suggestion page
+                    </div>
+                    <!-- <div class="btns">
+
+                        <button class="btn ">Ecommerce Website</button> <button class="btn ">get the code</button>
+                    </div> -->
+
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="youtube-clone-img project-img banner-ecomm">
+                    <div class="carousel-ecomm" id="carousel-ecomm">
+                        <div class="slide-ecomm "><img class="ecomm-img"
+                                src="./for portfolio/ecommerce images/imge1.png" /></div>
+                        <div class="slide-ecomm "><img class="ecomm-img"
+                                src="./for portfolio/ecommerce images/imge2.png" /></div>
+                        <div class="slide-ecomm "><img class="ecomm-img"
+                                src="./for portfolio/ecommerce images/imge3.png" /></div>
+                        <div class="slide-ecomm "><img class="ecomm-img"
+                                src="./for portfolio/ecommerce images/imge4.png" /></div>
+                        <div class="slide-ecomm "><img class="ecomm-img"
+                                src="./for portfolio/ecommerce images/imge5.png" /></div>
+                        <div class="slide-ecomm "><img class="ecomm-img"
+                                src="./for portfolio/ecommerce images/imge1.png" /></div>
+                        <!-- <div class="slide">1</div>
+                        <div class="slide">2</div>
+                        <div class="slide">3</div>
+                        <div class="slide">4</div>
+                        <div class="slide">5</div>
+                        <div class="slide">1</div> -->
+                    </div>
+
+                </div>
+                <div class="project-details">
+                    <div class="youtube-details">
+                        <h1 style="margin-bottom: 20px;">E-COMMERCE WEBSITE</h1>
+
+                        I build this E-Commerce website under the guidance for practicing the core concepts in
+                        ReactsJs.<br />
+                        Here I have learnt about the React Hooks like useState,useEffect,and useContext.<br />
+                        In this I use React-Router-Dom concept for the pages like Men , Womes and Kids sections<br />
+                        And also I decrease the code reusability of the site by using the advantage of component
+                        structuring in ReactsJs
+                    </div>
+                    <!-- <div class="btns">
+
+                        <button class="btn ">Ecommerce Website</button> <button class="btn ">get the code</button> -->
+                    <!-- </div> -->
+
+                </div>
+            </div>
+
+            <!-- <div class="project-card">
+                <div class="youtube-clone-img project-img"></div>
+                <div class="project-details">
+                    <div class="youtube-details">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatibus, rem eligendi
+                        praesentium enim exercitationem cum odio debitis corporis quod in hic accusantium autem veniam
+                        nobis illo dolore! Facilis sequi consectetur impedit commodi fugiat dolor earum illo, tempore,
+                        incidunt animi libero provident non saepe! Distinctio.
+                    </div>
+                    <div class="btns">
+
+                        <button class="btn ">Automatic</button>
+                        <button class="btn ">get the code</button>
+                    </div>
+                </div>
+            </div> -->
+
+
+        </div>
+    </div>
+    <div class="contact" id="Contact">
+        <h1 class="contact-title" style="font-weight: bold;font-size: 50px;margin-bottom: 20px;">FOR CONTACT</h1>
+        <div class=" container">
+            <div class="form-parent">
+                <form class="form-details">
+                    <div class="or">
+
+                        <h1>sasankbavirisetti@gmail.com</h1>
+                        <br />
+                        <h1>OR</h1>
+                    </div>
+                    <h2>Send me a message
+                    </h2>
+                    <input placeholder="Username" required type="text" class="input-form" />
+                    <input placeholder="Enter Email" required type="email" class="input-form" />
+                    <input placeholder="Subject" required type="text" class="input-form" />
+                    <h3>Tell me the message</h3>
+                    <textarea class="input-form id=" w3review" required name="w3review" rows="4" maxlength="210"
+                        cols="10" placeholder="write message here in 30 words"></textarea>
+                    <button class="btn btn-contact">Send</button>
+
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

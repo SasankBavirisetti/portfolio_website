@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.name-logo {
+    color: black;
+    text-decoration: none;
+}
+
+.header {
+    /* background-attachment: sticky;
+    z-index: 10; */
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px;
+    background-color: #f7f4f4;
+    width: 100%;
+    height: 70px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    column-gap: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    cursor: pointer;
+}
+
+
+/* main section */
+.profile-pic {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    margin: 0px 59px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+}
+
+.text {
+    font-size: 20px;
+}
+
+.name {
+    font-size: 40px;
+}
+
+.role {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.text-details {
+    margin: 15px;
+}
+
+.btn-container {
+    margin: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid white;
+    font-size: 15px;
+    margin: 5px 10px;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+
+.social-media-profiles {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+/* PROJECTS */
+.projects {
+    width: 100%;
+}
+
+.project-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.projects {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: whitesmoke
+}
+
+.project-card {
+    margin-top: 20px;
+    padding: 10px 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+
+.project-img {
+    height: 215px;
+    width: 60%;
+}
+
+
+.banner-news {
+    width: 285px;
+    height: 285px;
+    background-color: red;
+    overflow: hidden;
+}
+
+.carousel-news {
+    background-color: pink;
+    display: flex;
+    width: 300%;
+    height: 100%;
+}
+
+.slide-news {
+    height: 100%;
+    width: 300px;
+}
+
+.news-img {
+    width: 285px;
+    height: 100%;
+}
+
+
+.banner-crud {
+    width: 440px;
+    height: 310px;
+    overflow: hidden;
+}
+
+.carousel-crud {
+    background-color: lightgray;
+    display: flex;
+    width: 1000%;
+    height: 100%;
+}
+
+.slide-crud {
+    height: 300px;
+    width: 350px;
+    background-size: contain;
+}
+
+.crud-img {
+    width: 285px;
+    height: 100%;
+    margin-top: 5%
+}
+
+.banner-clone {
+    width: 315px;
+    height: 300px;
+}
+
+.clone-img {
+    width: 315px;
+    height: 100%;
+}
+
+
+.banner-ecomm {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin-left: -167px;
+}
+
+.carousel-ecomm {
+    background-color: white;
+    display: flex;
+    width: 600%;
+    height: 100%;
+}
+
+.slide-ecomm {
+    height: 300px;
+    width: 300px;
+    background-size: contain;
+}
+
+.slide {
+    height: 100%;
+    width: 500px;
+}
+
+.ecomm-img {
+    width: 285px;
+    height: 100%;
+}
+
+
+
+
+
+
+
+.project-details {
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    row-gap: 30px;
+    height: 300px;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+}
+
+/* EXPERIENCE */
+.experience {
+    width: 100%;
+    padding: 20px 80px;
+}
+
+.experience-title {
+    text-align: center;
+}
+
+.experience-img {
+    height: 300px;
+    width: 40%;
+    background-color: pink;
+}
+
+.experience-card {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    column-gap: 40px;
+}
+
+.experience-project-details {
+    margin: 10px 0px 20px 10px;
+
+}
+
+.experience-details {
+    top: 15px;
+    width: 50%;
+    transition: 2s ease;
+    animation: position 2s ease 1 linear fill-mode;
+    opacity: 0;
+}
+
+
+
+/* CONTACT */
+.contact {
+    margin: 15px 0px;
+    padding-top: 30px;
+    width: 100%;
+    height: 100vh;
+    background-color: lightgray;
+}
+
+.contact-title {
+    text-align: center;
+}
+
+.form-parent {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+}
+
+.input-form {
+    padding: 5px;
+    text-indent: 15px;
+    padding: 10px 0px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid white;
+    width: 100%;
+}
+
+.form-details {
+    row-gap: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    padding: 10px;
+}
+
+.btn-contact {
+    background-color: #6d6dfb;
+    outline: none;
+    border: 1px solid #6d6dfb;
+    margin-left: 324px;
+    color: white;
+}
+
+/* SKILLS */
+.skill-container {
+    width: 100%;
+    height: 80vh;
+    margin: 10px 0px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.skill-title {
+    padding: 10px 0px 10px 316px;
+    font-weight: bold;
+
+}
+
+.images {
+    margin-top: 20px;
+    border-radius: 5px;
+    filter: invert (100%);
+    height: 150px;
+    width: 166px;
+}
+
+.html-image {
+    height: 136px;
+    margin-left: 49px;
+
+}
+
+.react-image {
+    width: 204px;
+    height: 168px;
+    margin-left: -53px;
+    margin-right: 10px;
+
+}
+
+.javascript-image {
+    width: 264px;
+    margin-left: -15px;
+}
+
+.css-image {
+    width: 135px;
+    margin-left: 32px;
+    height: 140px;
+}
+
+.python-image {
+    width: 146px;
+    margin-left: -3px;
+}
+
+.java-image {
+    width: 146px;
+    margin-left: 32px;
+    margin-bottom: 28px;
+    margin-top: 2px;
+
+}
+
+.skill-images {
+    width: 700px;
+    row-gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 40px;
+}
+
+#Projects {
+    transition: scroll 1s ease;
+}
+
+.main {
+    height: 64vh;
+
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
